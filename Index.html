@@ -1,0 +1,84 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="jumbotron">
+        <h1 class="display-4" style="text-align: center;">Javascript Practice</h1>
+        <p class="lead" style="text-align: center;">Practice Javascript for one hour every morning, in order to make my work more interactive!</p>
+        <hr class="my-4">
+        <p style="text-align: center;">Let's start by grabbing elements on the page and altering their style through the click of a button.</p>
+        <div style="display: flex; justify-content: center;">
+            <label style="margin-right: 5px;">Button Background Options: </label>
+            <select name="buttonChanger" id="buttonChanger" onchange="changeButtonColor(this)">  <!--the "this" parameter is this change instance value-->
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>       <!--So here, we give the button (or any element we want to alter) an ID and reference that ID in our JS function-->
+                <option value="Yellow">Yellow</option>
+                <option value="Red">Red</option>
+                <option value="Black">Black</option>
+            </select>
+            <label style="margin-left: 20px; margin-right: 5px;">Button Text Options: </label>
+            <select name="textChanger" id="textChanger" onchange="changeTextColor(this)">
+                <option value="Blue">Blue</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+            </select>
+            <label style="margin-left: 20px; margin-right: 5px;">Button Height Options: </label>
+            <select name="heightChanger" id="heightChanger" onchange="changeButtonHeight(this)">
+                <option value="38px">Normal</option>
+                <option value="10px">Tiny</option>
+                <option value="20px">Smaller</option>
+                <option value="60px">Bigger</option>
+                <option value="80px">Even Bigger</option>
+                <option value="100px">Biggest</option>      
+            </select>
+            <label style="margin-left: 20px; margin-right: 5px;">Button Width Options: </label>
+            <select name="widthChanger" id="widthChanger" onchange="changeButtonWidth(this)">
+                <option value="111.609px">Normal</option>
+                <option value="50px">Tiny</option>
+                <option value="80px">Smaller</option>
+                <option value="140px">Fatter</option>
+                <option value="170px">Even Fatter</option>
+                <option value="250px">Obese</option>      
+            </select>
+            <label style="margin-left: 20px; margin-right: 5px;">Button Border-Radius Options: </label>
+            <select name="radiusChanger" id="radiusChanger" onchange="changeButtonRadius(this)">
+                    <option value="0%">No Curve</option>
+                    <option value="25%">Curved</option>
+                    <option value="50%">Oval/Circle</option>
+            </select>
+            <label style="margin-left: 20px; margin-right: 5px;">Button Border-Color Options: </label>
+            <select name="borderColor" id="borderColor" onchange="changeButtonBorder(this)">
+                    <option value="Blue">Blue</option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+            </select>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 4%;">
+                <button id="button" class="btn btn-primary" style="margin-left: 20px; font-size: 1em;">Change Me!</button>
+            </div>
+      </div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="GP1.js"></script>
+</body>
+</html>
